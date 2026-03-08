@@ -3,7 +3,7 @@ CFLAGS = -O3 -Wall -Wextra -pedantic
 LDFLAGS = -lraylib -lGL -lm -lpthread -ldl -lrt
 TARGET = main
 
-$(TARGET): main.c base.h
+$(TARGET): main.c base.h main.h
 	$(CC) main.c $(CFLAGS) -o $(TARGET) $(LDFLAGS)
 
 run: $(TARGET)
